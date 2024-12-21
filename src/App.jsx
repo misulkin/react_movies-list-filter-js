@@ -35,7 +35,7 @@ export const App = () => {
             <div className="control">
               <input
                 onChange={eve => {
-                  setQuery(eve.target.value);
+                  setQuery(eve.target.value.trim());
                 }}
                 type="text"
                 id="search-query"
